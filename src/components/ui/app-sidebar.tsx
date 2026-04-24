@@ -86,16 +86,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link
-                href='/analytics'
+                href='/integrity'
                 className={cn(
                   'flex items-center gap-2 rounded-md px-2 py-1',
-                  pathname === '/analytics'
+                  pathname === '/integrity'
                     ? 'bg-white/10 text-white'
                     : 'text-white/60 hover:text-white'
                 )}
               >
                 <ChartColumnBig className='h-5 w-5 text-white/60' />
-                <span className='text-white'>Analytics</span>
+                <span className='text-white'>Integrity Check</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>

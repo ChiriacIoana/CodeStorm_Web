@@ -34,9 +34,9 @@ export default function FileSettingsPage() {
 
   return (
     <div className="flex min-h-screen">
-      {/* Sidebar */}
+     
       <aside className="w-[300px] shrink-0 border-r border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 p-6 flex flex-col gap-6">
-        {/* Header */}
+       
         <div>
           <h1 className="text-[15px] font-medium text-zinc-900 dark:text-zinc-100">
             Document settings
@@ -46,7 +46,6 @@ export default function FileSettingsPage() {
           </p>
         </div>
 
-        {/* Typography */}
         <div>
           <p className="text-[11px] font-medium text-zinc-400 uppercase tracking-widest mb-3">
             Typography
@@ -106,7 +105,6 @@ export default function FileSettingsPage() {
 
         <hr className="border-zinc-200 dark:border-zinc-800" />
 
-        {/* Appearance */}
         <div>
           <p className="text-[11px] font-medium text-zinc-400 uppercase tracking-widest mb-3">
             Appearance
@@ -137,7 +135,6 @@ export default function FileSettingsPage() {
 
         <hr className="border-zinc-200 dark:border-zinc-800" />
 
-        {/* Apply button — pinned to bottom */}
         <div className="mt-auto">
           <button
             onClick={handleApply}
@@ -152,9 +149,8 @@ export default function FileSettingsPage() {
         </div>
       </aside>
 
-      {/* Main */}
       <main className="flex-1 p-6 flex flex-col gap-4 bg-white dark:bg-zinc-950">
-        {/* Top bar */}
+        
         <div className="flex items-center justify-between">
           <span className="text-[11px] font-medium text-zinc-400 uppercase tracking-widest">
             Live preview
@@ -164,7 +160,6 @@ export default function FileSettingsPage() {
           </span>
         </div>
 
-        {/* File preview card */}
         {fileData ? (
           <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 overflow-hidden">
             <div className="px-4 py-2.5 border-b border-zinc-200 dark:border-zinc-800 flex items-center gap-2 bg-zinc-50 dark:bg-zinc-900">
@@ -191,10 +186,10 @@ export default function FileSettingsPage() {
             )}
           </div>
         ) : (
-          /* Text canvas preview */
+          
           <div
             className="rounded-xl border overflow-hidden flex-1"
-            style={{ borderColor: canvasBorder, background: canvasBg }}
+            style={{ borderColor: "#222", background: "#111" }}
           >
             <div
               className="px-4 py-2.5 border-b flex items-center gap-2"
