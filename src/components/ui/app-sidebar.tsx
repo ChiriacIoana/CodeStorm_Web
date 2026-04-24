@@ -18,7 +18,7 @@ import {
   Building2,
   ChartColumnBig,
   LayoutDashboard,
-  Lightbulb,
+  FolderGit2,
   Settings
 } from 'lucide-react';
 import Link from 'next/link';
@@ -99,6 +99,23 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
+           <SidebarMenuItem>
+            <SidebarMenuButton asChild>
+              <Link
+                href='/diff'
+                className={cn(
+                  'flex items-center gap-2 rounded-md px-2 py-1',
+                  pathname === '/diff'
+                    ? 'bg-white/10 text-white'
+                    : 'text-white/60 hover:text-white'
+                )}
+              >
+                <FolderGit2 className='h-5 w-5 text-white/60' />
+                <span className='text-white'>Sylabus Diff</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          
         </SidebarMenu>
         <div className='flex-1' />
       </SidebarContent>
