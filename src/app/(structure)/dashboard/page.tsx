@@ -15,10 +15,11 @@ export default function Page() {
 
   const [isUploadOpen, setIsUploadOpen] = useState(false);
 
-  const handleUploadFile = () => {
- 
-    setIsUploadOpen(true);
-  };
+  const router = useRouter();
+
+const handleUploadFile = () => {
+  setIsUploadOpen(true);
+};
 
   return (
     <div className="flex w-full flex-col gap-6 rounded-xl">
