@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Modal from '@/src/components/modals/modal';
-import UploadModalLayout from '@/src/components/modals/layout';
 import UploadModal from '@/src/components/modals/layout';
 
 

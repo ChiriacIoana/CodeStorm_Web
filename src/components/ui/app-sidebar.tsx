@@ -34,11 +34,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild className='p-0 hover:bg-transparent'>
-              <Link href='/dashboard' className='flex items-center gap-2'>
-                <div className='rounded-full'>
-                  <Logo className='rounded-full' />
-                </div>
+            <SidebarMenuButton asChild className='p-0 m-0 h-auto hover:bg-transparent'>
+              <Link href='/dashboard' className='flex items-center gap-0'>
+               
+                  <Logo className="w-8 h-8 object-contain rounded-full" />
+                
                 <span className='text-base font-semibold text-white'>
                   Nume
                 </span>
